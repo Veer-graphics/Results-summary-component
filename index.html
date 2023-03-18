@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- typography -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+  </style>
+
+</head>
+<body>
+
+  <main>
+    <div class="grid">
+      <div class="gridbox your-result">
+        <h3 class="heading3 blue-heading">Your Result</h3>
+        <div class="resultNumber">
+          <h1 class="heading1">76</h1>
+          <p class="total">of 100</p>
+        </div>
+        <div class="text-wrapper">
+          <h2 class="heading2">Great</h2>
+          <p class="result-description">You scored higher than 65% of the people who have taken these tests.</p>
+        </div>
+      </div>
+      <div class="gridbox summary">
+        <h3 class="heading3">Summary</h3>
+        <div class="skills-container">
+
+          <div class="skill reaction">
+            <div class="left">
+              <div class="icon"><img src="assets/images/icon-reaction.svg" alt=""></div>
+              <p class="subheading red">Reaction</p>
+            </div>
+            <div class="right">
+              <p class="total-description"><span class="current">80</span> / 100</p>
+            </div>
+          </div>
+
+          <div class="skill memory">
+            <div class="left">
+              <div class="icon"><img src="assets/images/icon-memory.svg" alt=""></div>
+              <p class="subheading yellow">Memory</p>
+            </div>
+            <div class="right">
+              <p class="total-description"><span class="current">92</span> / 100</p>
+            </div>
+          </div>
+
+          <div class="skill verbal">
+            <div class="left">
+              <div class="icon"><img src="assets/images/icon-verbal.svg" alt=""></div>
+              <p class="subheading green">Verbal</p>
+            </div>
+            <div class="right">
+              <p class="total-description"><span class="current">61</span> / 100</p>
+            </div>
+          </div>
+
+          <div class="skill visual">
+            <div class="left">
+              <div class="icon"><img src="assets/images/icon-visual.svg" alt=""></div>
+              <p class="subheading blue">Visual</p>
+            </div>
+            <div class="right">
+              <p class="total-description"><span class="current">72</span> / 100</p>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn">Continue</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/Veer-graphics">Veer-graphics</a>.
+  </div>
+</footer>
+</body>
+</html>

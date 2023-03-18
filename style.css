@@ -1,0 +1,207 @@
+/* universal */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Hanken Grotesk',sans-serif;
+}
+/* root */
+:root{
+--Light-red: hsl(0, 100%, 67%);
+--Light-red-opacity: hsla(0, 100%, 67%, 0.1);
+--Orangey-yellow: hsl(39, 100%, 56%);
+--Orangey-yellow-opacity: hsla(39, 100%, 56%, 0.1);
+--Green-teal: hsl(166, 100%, 37%);
+--Green-teal-opacity: hsla(166, 100%, 37%, 0.1);
+--Cobalt-blue: hsl(234, 85%, 45%);
+--Cobalt-blue-opacity: hsla(234, 85%, 45%, 0.1);
+
+--Light-slate-blue-bg: hsl(252, 100%, 67%);
+--shadow: hsla(252, 100%, 67%, 0.2);
+--Light-royal-blue-bg: hsl(241, 81%, 54%);
+
+--Violet-blue-circle: hsla(256, 72%, 46%, 1);
+--Persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+--White: hsl(0, 0%, 100%);
+--Pale-blue: hsl(221, 100%, 96%);
+--Light-lavender: hsl(241, 100%, 89%);
+--Dark-gray-blue: hsl(224, 30%, 27%);
+--Dark-gray-blue-opacity: hsla(224, 30%, 27%,0.7);
+}
+/* body */
+body{
+    font-size: 18px;
+    line-height: 1.6;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+/* grid */
+.grid{
+    display: grid;
+    background-color: var(--White);
+}
+/* result */
+.your-result{
+    background: linear-gradient(to bottom, var(--Light-slate-blue-bg), var(--Light-royal-blue-bg));
+    text-align: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    color: var(--Light-lavender);
+}
+.gridbox{
+    padding: 30px;
+}
+.your-result heading3{
+    font-size: 20px;
+    font-weight: 700;
+}
+.resultNumber{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(to top, var(--Persian-blue-circle), var(--Violet-blue-circle));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+}
+.heading1{
+    color: var(--White);
+    font-size: 50px;
+    line-height: 1;
+}
+.heading2{
+    color: var(--White);
+}
+/* summary */
+.heading3{
+    font-weight: 700;
+}
+.skills-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 30px 0;
+}
+.skill{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 7px;
+}
+.subheading{
+    line-height: 1;
+}
+.left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.total-description{
+    color: var(--Dark-gray-blue-opacity);
+}
+.current{
+    font-weight: 800;
+    color: var(--Dark-gray-blue);
+}
+.reaction{
+    background-color: var(--Light-red-opacity);
+}
+.red{
+    color: var(--Light-red);
+}
+.memory{
+    background-color: var(--Orangey-yellow-opacity);
+}
+.yellow{
+    color: var(--Orangey-yellow);
+}
+.verbal{
+    background-color: var(--Green-teal-opacity);
+}
+.green{
+    color: var(--Green-teal);
+}
+.visual{
+    background-color: var(--Cobalt-blue-opacity);
+}
+.blue{
+    color: var(--Cobalt-blue);
+}
+/* button */
+.btn{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease background-color;
+    background-color: var(--Dark-gray-blue);
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 30px;
+    font-weight: 700;
+    color: var(--White);
+}
+.btn:hover{
+    background: linear-gradient(to bottom, var(--Light-slate-blue-bg), var(--Light-royal-blue-bg));
+}
+
+/* media query */
+@media (min-width : 600px)
+{
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .grid{
+        grid-template-columns: repeat(2,1fr);
+        overflow: hidden;
+        border-radius: 30px;
+        box-shadow: var(--shadow) 0px 8px 24px;
+        max-width: 900px;
+    }
+    .gridbox{
+        padding: 60px 30px;
+    }
+    .your-result{
+        border-radius: 30px;
+    }
+    .resultNumber{
+        width: 200px;
+        height: 200px;
+        margin: 30px auto;
+    }
+    .result-description{
+        max-width: 65%;
+        margin: 0 auto;
+    }
+    main{
+        padding: 0 10px;
+    }
+    .skills-container{
+        gap: 30px;
+    }
+
+}
+/* attribution */
+footer{
+    margin-top: 40px;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}

@@ -11,23 +11,39 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Orange: hsl(25, 97%, 53%)
+- Light red: hsl(0, 100%, 67%)
+- Orangey yellow: hsl(39, 100%, 56%)
+- Green teal: hsl(166, 100%, 37%)
+- Cobalt blue: hsl(234, 85%, 45%)
+
+## Gradients
+
+- Light slate blue (background): hsl(252, 100%, 67%)
+- Light royal blue (background): hsl(241, 81%, 54%)
+
+- Violet blue (circle): hsla(256, 72%, 46%, 1)
+- Persian blue (circle): hsla(241, 72%, 46%, 0)
+
+
 
 ### Neutral
 
 - White: hsl(0, 0%, 100%)
-- Light Grey: hsl(217, 12%, 63%)
-- Medium Grey: hsl(216, 12%, 54%)
-- Dark Blue: hsl(213, 19%, 18%)
-- Very Dark Blue: hsl(216, 12%, 8%)
+- Pale blue: hsl(221, 100%, 96%)
+- Light lavender: hsl(241, 100%, 89%)
+- Dark gray blue: hsl(224, 30%, 27%)
+
+### Notes
+
+Use transparency to get the colour variations necessary to match the design. Hint: look into using `hsla()`.
 
 ## Typography
 
 ### Body Copy
 
-- Font size (paragraph): 15px
+- Font size (paragraphs): 18px
 
 ### Font
 
-- Family: [Overpass](https://fonts.google.com/specimen/Overpass)
-- Weights: 400, 700
+- Family: [Hanken Grotesk](https://fonts.google.com/specimen/Hanken+Grotesk)
+- Weights: 500, 700, 800
